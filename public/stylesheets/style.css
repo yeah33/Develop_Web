@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h3{
+  margin-top: 10px;
+  text-align: center;
+}
+
+hr{
+  border : 1px solid black;
+}
+
+.footer {
+  margin: 1em;
+  text-align: center;
+  font-size: 25px;
+}
+.team{
+  font: bold;
+}

@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  header
+    img#mju_logo(src='/images/Myongju_University_logotype.png', alt='')
+  section
+    table
+      tbody
+        tr
+          td#cell_1(rowspan='4')
+          td#cell_2(rowspan='4')
+            div
+              img(src='/images/박보검.jpg', alt='박보검', style='width:100%; height: 100%;')
+            div
+              img(src='/images/runas.jpg', alt='club', style='width:100%; height: 100%;')
+          td#cell_3(colspan='2')
+            img(src='/images/login.png', alt='')
+        tr
+          td#cell_4(style='background-color:lightgrey;')
+            .loginForm
+              form.w3-container(action='/login', method='POST')
+                ul.login(style='list-style:none;')
+                  li
+                    label
+                      | ID
+                      | &nbsp;
+                      | &nbsp;
+                      | &nbsp;
+                      | &nbsp;
+                      | &nbsp;
+                      | &nbsp;
+                      input#input_id.w3-input(type='text', name='studentID', placeholder='학번')
+                  li
+                    label
+                      | Password
+                      input#input_pwd.w3-input(type='password', name='password', placeholder='비밀번호')
+                  li
+                    //- input.btn.btn-success(type='submit', name='LOGIN') LOGIN
+                    button#login_btn(type='submit', name='LOGIN') LOGIN
+        tr
+          td#cell_5(colspan='2')
+            button.w3-btn.w3-black(type='button', name='search_id', style='margin: 2em auto;', onclick="window.open('https://sso.mju.ac.kr/swift/login/login_myiweb.jsp?RSP=myiweb.mju.ac.kr&RelayState=index_SSO.jsp','window_name','width=800,height=400,location=no,status=no,scrollbars=yes');") SEARCH ID
+            button.w3-btn.w3-black(type='button', name='search_password', , onclick="window.open('https://sso.mju.ac.kr/swift/login/login_myiweb.jsp?RSP=myiweb.mju.ac.kr&RelayState=index_SSO.jsp','window_name','width=800,height=400,location=no,status=no,scrollbars=yes');") SEARCH PASSWORD
+        tr
+          td(style='background-color:lightgrey; text-align:center;') 공지사항
+        tr
+          td#cell_13 13
+          td#cell_14(colspan='3')
+            img#seoul(src='/images/인문캠퍼스.gif', alt='')
+            img#yongin(src='/images/자연캠퍼스.gif', alt='')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  script(src='/javascripts/loginView.js')

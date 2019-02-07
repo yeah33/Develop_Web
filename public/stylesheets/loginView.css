@@ -1,5 +1,5 @@
 body{
-  background-image: url("image/background.jpg");
+  /* background-image: url("../images/background.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,22 +13,32 @@ header img{
   width : 200px;
   cursor: pointer;
 }
-form{
+/* form{
   margin-right: 40px;
-}
+} */
 .w3-input:hover{
   border: 1px solid red;
 }
+
+.loginForm {
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 1em;
+}
+
 #login_btn{
-  float:right;
-  margin-top: 5px;
+  float:center;
+  margin: auto;
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 8px 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
   cursor: pointer;
 }
@@ -36,6 +46,11 @@ form{
   border-radius: 12px;
   background-color : goldenrod;
 }
+
+.w3-btn {
+  font-size: 12px;
+}
+
 table{
   border : 1px solid black;
   border-collapse : collapse;
@@ -72,6 +87,10 @@ td#cell_3>img{
 td#cell_14>img#seoul{
   margin-left : 10px;
 }
+td#cell_14>ul{
+  display: inline-block;
+}
+
 td {
   border : 1px solid black;
 }
@@ -87,7 +106,8 @@ td#cell_3, td#cell_5{
   height : 10%;
 }
 td#cell_4{
-  height : 30%
+  height : 30%;
+  text-align: center;
 }
 td#cell_13{
   background-color : black;

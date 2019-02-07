@@ -1,7 +1,43 @@
 doctype html
 html
   head
-    title= title
+    title 명지대학교 공강공강
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    script(src='https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js', type='text/javascript')
+    link(href='https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css', rel='stylesheet', type='text/css')
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js')
+    script(src='/javascripts/bootstrap-notify.js')
+
+    //- this application
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/index.css')
+    link(rel='stylesheet', href='/stylesheets/loginView.css')
+    script(src='/javascripts/application.js')
+
   body
+    header
+      h3 명지대학교 공강공강
+      hr
+    if flashMessages
+      each texts, type in flashMessages
+        .container
+          .alert.alert-dismissible.fade.show(class=`alert-${type}`)
+            each msg in texts
+              | #{msg} 
+            button.close(type='button', data-dismiss='alert', aria-label='close')
+              span(aria-hidden='true') &times;
     block content
+
+    hr
+    .footer
+      p.team MJU LUNAS
+      p 김민수, 김수아, 김현목, 배수혜, 이준석, 이예은, 정찬영, 최리안, 최민지
+

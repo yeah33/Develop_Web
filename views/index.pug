@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section
+    .container
+      .row
+        .col
+          img#mju_logo2(src='/images/mju_logo2.jpg', alt='')
+        .col.buttons
+          a.btn.btn-primary.btn-lg.btn-block.btn1(href='#') 조회하기
+          a.btn.btn-primary.btn-lg.btn-block.btn2(href='#') 예약하기
+          a.btn.btn-primary.btn-lg.btn-block.btn3(href='#') 예약확인
+          a.btn.btn-primary.btn-lg.btn-block.btn4(href='/singout') 로그아웃

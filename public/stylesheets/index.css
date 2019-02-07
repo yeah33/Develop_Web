@@ -1,26 +1,49 @@
-button{
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    width : 70%;
-    height: 25%;
-    font-size: 150%;
-    border-radius: 50px;
+.buttons{
+    padding: 1em 15px;
 }
+
+.btn1 {
+    background-color: #1e0e58;
+    border-color: #1e0e58;
+}
+.btn1:hover {
+    background-color: #361e8b;
+    border-color: #361e8b;
+}
+.btn2 {
+    background-color: #311e75;
+    border-color: #311e75;
+}
+.btn2:hover {
+    background-color: #5239af;
+    border-color: #5239af;
+}
+.btn3 {
+    background-color: #503c9b;
+    border-color: #503c9b;
+}
+.btn3:hover {
+    background-color: #7e65db;
+    border-color: #7e65db;
+}
+.btn4 {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #27063a;
+}
+.btn4:hover {
+    background-color: #3c0f61a9;
+    border-color: #27063a;
+}
+.btn-primary.btn-lg.btn-block{
+    border-style: solid;
+    border-width: medium;
+    border-radius: 15px;
+    margin-top: 2.5em;
+}
+
 #mju_logo2{
     border-radius: 50px;
 }
-h3{
-    margin-top: 10px;
-    text-align: center;
-}
-hr{
-    border : 1px solid black;
-}
-footer{
-    text-align: center;
-    font-size: 25px;
-    color : white;
-    background-color: red;
-}
+
+
